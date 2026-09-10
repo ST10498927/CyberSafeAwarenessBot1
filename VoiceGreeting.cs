@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Media;
 
-namespace CyberSafeAwarenessBot1
+namespace CyberSafeAwarenessBot;
+
+public class VoiceGreeting
 {
-    internal class VoiceGreeting
+    public void PlayGreeting()
     {
+        string audioPath = Path.Combine(AppContext.BaseDirectory, "Audio", "greeting.wav");
+
+        if (File.Exists(audioPath))
+        {
+            SoundPlayer player = new SoundPlayer(audioPath);
+            player.PlaySync();
+        }
     }
 }
