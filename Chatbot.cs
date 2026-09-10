@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CyberSafeAwarenessBot;
 
-namespace CyberSafeAwarenessBot1
+public class Chatbot
 {
-    internal class Chatbot
+    private readonly UserProfile userProfile;
+
+    public Chatbot()
     {
+        userProfile = new UserProfile();
+    }
+
+    public void Start()
+    {
+        Console.WriteLine("CyberSafe Awareness Bot");
+        Console.WriteLine("Chatbot started successfully.");
     }
 }
