@@ -15,6 +15,7 @@ public class Chatbot
         responseHandler = new ResponseHandler();
     }
 
+    // Starts the chatbot.
     public void Start()
     {
         voiceGreeting.PlayGreeting();
@@ -26,6 +27,7 @@ public class Chatbot
         StartConversation();
     }
 
+    // Displays the initial welcome message.
     private void DisplayWelcome()
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
@@ -42,6 +44,7 @@ public class Chatbot
         Console.WriteLine();
     }
 
+    // Gets and validates the user's name.
     private void GetUserName()
     {
         Console.Write("Please enter your name: ");
@@ -57,6 +60,7 @@ public class Chatbot
         userProfile.Name = name;
     }
 
+    // Displays the personalised welcome.
     private void DisplayPersonalisedWelcome()
     {
         Console.WriteLine();
@@ -85,6 +89,7 @@ public class Chatbot
         Console.WriteLine();
     }
 
+    // Handles the conversation with the user.
     private void StartConversation()
     {
         while (true)

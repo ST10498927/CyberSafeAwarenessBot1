@@ -2,9 +2,10 @@
 
 public class ResponseHandler
 {
+    // Returns a response based on the user's question.
     public string GetResponse(string question)
     {
-        string input = question.ToLower();
+        string input = question.Trim().ToLower();
 
         if (input.Contains("how are you"))
         {
