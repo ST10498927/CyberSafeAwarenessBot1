@@ -11,4 +11,10 @@
     <PackageReference Include="System.Windows.Extensions" Version="10.0.12" />
   </ItemGroup>
 
+	<ItemGroup>
+		<None Update="Audio\greeting.wav">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
 </Project>
